@@ -1,5 +1,7 @@
 CREATE DATABASE crowd_detection;
 
+USE crowd_detection;
+
 CREATE TABLE crowd_records (
     rec_id      INT                 NOT NULL    AUTO_INCREMENT   PRIMARY KEY,
     crowd_id    INT UNSIGNED        NOT NULL,

@@ -12,9 +12,7 @@ db = mysql.connector.connect(
 
 mycursor = db.cursor()
 
-# mycursor.execute("CREATE DATABASE test")
-# Q1 = "CREATE TABLE Crowd (id int PRIMARY KEY AUTO_INCREMENT, crowd_id int UNSIGNED, size int UNSIGNED, )"
-query = "SELECT * FROM test"
+query = "SELECT * FROM crowd_records"
 
 df = pd.read_sql(query, db)
 print(df)
